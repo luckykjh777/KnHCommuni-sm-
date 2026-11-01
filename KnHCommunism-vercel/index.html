@@ -46,8 +46,8 @@ body.brainrot-overdrive button.primary,body.brainrot-overdrive .madness-btn{box-
 <footer>KnHCommunism · 친구들끼리 사용하는 작은 커뮤니티 · Respect each other.</footer>
 <script>
 // Supabase 대시보드 → Project Settings → API에서 확인한 값으로 교체하세요.
-const SUPABASE_URL = 'YOUR_SUPABASE_URL';
-const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_PUBLISHABLE_KEY';
+const SUPABASE_URL = 'https://ovvzskahfibyjvhcdniz.supabase.co/rest/v1/';
+const SUPABASE_ANON_KEY = 'sb_publishable_g6vSAomSx9nosZdkXZrFNA_PAfuJjqD';
 const configured = SUPABASE_URL.startsWith('https://') && !SUPABASE_URL.includes('YOUR_') && SUPABASE_ANON_KEY && !SUPABASE_ANON_KEY.includes('YOUR_');
 const db = configured ? window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY) : null;
 let currentUser=null, currentProfile=null, currentPost=null;
